@@ -39,7 +39,4 @@ OrderedFriendsList = function() {
 }();
 
 OrderedFriendsList.init(AvailableList.getAvailableIDs());
-if (ChatSidebar.isEnabled() && ChatSidebar.isVisible()) {
-  ChatSidebar.toggle();
-  ChatSidebar.toggle();
-}
+Arbiter.inform('chat/visibility-changed');
