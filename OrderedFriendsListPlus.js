@@ -39,4 +39,5 @@ OrderedFriendsList = function() {
 }();
 
 OrderedFriendsList.init(AvailableList.getAvailableIDs());
+//Trigger sidebar refresh
 Arbiter.inform('chat/visibility-changed');
